@@ -15,6 +15,8 @@ class KisilerDaoRepository implements KisilerRepository {
     kisiListesi.add(k1);
     kisiListesi.add(k2);
 
+    
+
     return kisiListesi;
   }
 }

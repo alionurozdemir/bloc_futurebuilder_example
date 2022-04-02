@@ -1,3 +1,5 @@
+import 'package:bloc_futurebuilder_example/Counter/CounterCubit.dart';
+import 'package:bloc_futurebuilder_example/Counter/Counter_view.dart';
 import 'package:bloc_futurebuilder_example/KisilerCubit.dart';
 import 'package:bloc_futurebuilder_example/KisilerDaoRepository.dart';
 import 'package:bloc_futurebuilder_example/KisilerDurum.dart';
@@ -13,6 +15,11 @@ class MyApp extends StatelessWidget {
         providers: [
           BlocProvider(
             create: (context) => KisilerCubit(KisilerDaoRepository()),
+            child: Container(),
+          ),
+
+                    BlocProvider(
+            create: (context) => CounterCubit(),
             child: Container(),
           )
         ],
@@ -48,7 +55,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
         if (kisilerDurum is KisilerYuklendi) {
           var kisiListesi = kisilerDurum.kisiListesi;
           return ListView.builder(
-            itemCount:  kisiListesi.length,
+            itemCount: kisiListesi.length,
             itemBuilder: (context, index) {
               var kisi = kisiListesi[index];
               return Card(
@@ -61,6 +68,10 @@ class _AnaSayfaState extends State<AnaSayfa> {
         } else
           return Center();
       }),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () =>
+            Navigator.push(context, MaterialPageRoute(builder: (context) => CounterView())),
+      ),
     );
   }
 }
