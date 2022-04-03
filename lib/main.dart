@@ -1,5 +1,3 @@
-import 'package:bloc_futurebuilder_example/Counter/CounterCubit.dart';
-import 'package:bloc_futurebuilder_example/Counter/Counter_view.dart';
 import 'package:bloc_futurebuilder_example/KisilerCubit.dart';
 import 'package:bloc_futurebuilder_example/KisilerDaoRepository.dart';
 import 'package:bloc_futurebuilder_example/KisilerDurum.dart';
@@ -63,10 +61,10 @@ class _AnaSayfaState extends State<AnaSayfa> {
         } else
           return Center();
       }),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () =>
-            Navigator.push(context, MaterialPageRoute(builder: (context) => CounterView())),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () =>
+      //       Navigator.push(context, MaterialPageRoute(builder: (context) => CounterView())),
+      // ),
     );
   }
 }
