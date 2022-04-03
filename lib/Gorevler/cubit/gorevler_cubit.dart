@@ -8,11 +8,4 @@ class GorevlerCubit extends Cubit<GorevlerState> {
   GorevlerState? gelenGorev;
 
   GorevlerCubit() : super(GorevlerInitial());
-
-try{
-
-}catch
-
-
-  }
-
+}
