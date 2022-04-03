@@ -17,11 +17,6 @@ class MyApp extends StatelessWidget {
             create: (context) => KisilerCubit(KisilerDaoRepository()),
             child: Container(),
           ),
-
-                    BlocProvider(
-            create: (context) => CounterCubit(),
-            child: Container(),
-          )
         ],
         child: MaterialApp(
           title: 'Material App',
