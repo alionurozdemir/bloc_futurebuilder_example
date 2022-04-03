@@ -4,6 +4,7 @@ import 'package:bloc_futurebuilder_example/KisilerDurum.dart';
 import 'KisilerDaoRepository.dart';
 
 class KisilerCubit extends Cubit<KisilerDurum> {
+ 
   KisilerRepository kisilerRepository;
 
   KisilerCubit(this.kisilerRepository) : super(KisilerBaslangicSinifi());
