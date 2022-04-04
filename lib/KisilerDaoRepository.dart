@@ -1,5 +1,7 @@
 import 'Kisiler.dart';
 
+//Burayı database kısmı gibi düşün.
+
 abstract class KisilerRepository {
   Future<List<Kisiler>> kisileriGetir();
 }
@@ -14,8 +16,6 @@ class KisilerDaoRepository implements KisilerRepository {
 
     kisiListesi.add(k1);
     kisiListesi.add(k2);
-
-    
 
     return kisiListesi;
   }
