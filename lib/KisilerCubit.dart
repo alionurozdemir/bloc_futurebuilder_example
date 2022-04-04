@@ -17,7 +17,7 @@ class KisilerCubit extends Cubit<KisilerDurum> {
         emit(KisilerYuklendi(kisiListeCevap));
 
     } catch (e) {
-      emit(KisilerHata("Hata Oluştu"));
+      emit(KisilerHata("Hata Oluştu13"));
     }
   }
 }
