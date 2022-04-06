@@ -1,5 +1,5 @@
 import 'Kisiler.dart';
-
+//Durum yönetiminin yapıldığu sayfa
 abstract class KisilerDurum {
   KisilerDurum();
 }
