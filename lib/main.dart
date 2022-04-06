@@ -42,7 +42,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: const Text('App Bar'),
       ),
       body: BlocBuilder<KisilerCubit, KisilerDurum>(builder: (context, kisilerDurum) {
         if (kisilerDurum is KisilerYuklendi) {
