@@ -17,6 +17,8 @@ class KisilerYuklendi extends KisilerDurum {
   KisilerYuklendi(this.kisiListesi);
 }
 
+//Ekrana Hatayı Yazdırıyor
+
 class KisilerHata extends KisilerDurum {
   String hataMesaji;
   KisilerHata(this.hataMesaji);
