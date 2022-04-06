@@ -33,7 +33,7 @@ class AnaSayfa extends StatefulWidget {
 class _AnaSayfaState extends State<AnaSayfa> {
   @override
   void initState() {
-    // TODO: implement initState
+    
     super.initState();
     context.read<KisilerCubit>().kisileriAlveTetikle();
   }
